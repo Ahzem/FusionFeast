@@ -1,52 +1,54 @@
-# FusionFeast Restaurant Website
+<div align="center">
+  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/foodie)
+  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/foodie?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/foodie?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+  [![YouTube Video Views](https://img.shields.io/youtube/views/5XnX83goEZo?style=social)](https://youtu.be/5XnX83goEZo)
 
-Welcome to FusionFeast, a trendy restaurant website with a focus on a responsive design and basic animations.
+  <br />
+  <br />
 
-## Table of Contents
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Responsive Design](#responsive-design)
-- [Animations](#animations)
-- [License](#license)
+  <h2 align="center">Foodie - Fast food website</h2>
 
-## Overview
+  Foodie is a fully responsive fast food website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-This project is a simple restaurant website built with HTML, CSS, and JavaScript. It features a responsive design to ensure a great user experience on various devices and includes basic animations for added visual appeal.
+  <a href="https://codewithsadee.github.io/foodie/"><strong>➥ Live Demo</strong></a>
 
-## Getting Started
+</div>
+
+<br />
+
+### Demo Screeshots
+
+![Foodie Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
-- Web browser (Chrome, Firefox, Safari, etc.)
+Before you begin, ensure you have met the following requirements:
 
-### Installation
+* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ahzen/FusionFeast.git
-   ```
+### Run Locally
 
-2. Open the `index.html` file in your preferred web browser.
+To run **Foodie** locally, run this command on your git bash:
 
-## Usage
+Linux and macOS:
 
-Explore the website to see the responsive design and animations in action. The website includes sections such as a header, navigation bar, main content, and a footer.
+```bash
+sudo git clone https://github.com/codewithsadee/foodie.git
+```
 
-## Responsive Design
+Windows:
 
-The website is designed to be responsive, adapting to different screen sizes. Media queries in the CSS stylesheet handle adjustments for desktop, tablet, and mobile screens.
+```bash
+git clone https://github.com/codewithsadee/foodie.git
+```
 
-## Animations
+### Contact
 
-Two basic animations are included:
-1. **Fading In Element:** The opacity of an element gradually transitions from 0 to 1.
-2. **Moving Element Across the Screen:** An element moves horizontally across the screen.
+If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
 
-Feel free to explore the code for more details on these animations.
+### License
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is **free to use** and does not contains any license.
