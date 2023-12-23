@@ -53,7 +53,7 @@ If you have ideas for improvements or new features, feel free to contribute! For
 ## Credits
 
 - Template: [codewithsadee/foodie](https://github.com/codewithsadee/foodie.git)
-- Developer: Ahzem
-- University: Institute of Technology, University of Moratuwa
+- Developer: [Ahzem](https://linkedin.com/in/ahzem)
+- University: [Institute of Technology, University of Moratuwa](https://itum.mrt.ac.lk)
 
 Thank you for checking out FusionFeast! Enjoy your virtual culinary journey! 🎉🍽️
