@@ -16,7 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="./assets/css/signup.css">
+
 
   <!-- 
     - google font link
@@ -50,10 +50,10 @@
 
   <header class="header" data-header>
     <div class="container">
-<img class="logo" src="assets\images\Logo.png" alt="logo" width="50px">
+<img id="logo-img" class="logo" src="assets\images\Logo.png" alt="logo" width="50px">
       <h1>
         
-        <a href="#" class="logo">FusionFeast<span class="span">.</span></a>
+        <a href="#" id="logo-text" class="logo">FusionFeast<span class="span">.</span></a>
       </h1>
 
       <nav class="navbar" data-navbar>
@@ -131,26 +131,23 @@
       -->
 
     <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
-        <div class="container">
+        <div id="home-signin-signup" class="container">
 
           <div class="hero-content">
 
-            <p class="hero-subtitle">Eat Sleep And</p>
+              <p class="hero-subtitle">Eat Sleep And</p>
 
-            <h2 class="h1 hero-title">Supper delicious Burger in town!</h2>
+              <h2 class="h1 hero-title">Supper delicious Burger in town!</h2>
 
-            <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
-            
-            <div class="btn-group">
-                <button id="signup-btn" class="btn" onclick="toggleSignUpPopup()">Sign Up</button>
-                <button id="signin-btn" class="btn" onclick="toggleSignInPopup() ">Sign In</button>
-                <button style="display: none;" id="cencel-btn" class="btn" onclick="toggleLogoPopup()">Cencel</button>
-            </div>
+              <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
+              
+              <div class="btn-group">
+                  <button id="signup-btn" class="btn" onclick="toggleSignUpPopup()">Sign Up</button>
+                  <button id="signin-btn" class="btn" onclick="toggleSignInPopup() ">Sign In</button>
+                  <button style="display: none;" id="cencel-btn" class="btn" onclick="toggleLogoPopup()">Cencel</button>
+              </div>
 
           </div>
-
-
-          <div class="container1">
 
 
               <figure class="hero-banner">
@@ -161,11 +158,10 @@
                   class="w-100 hero-img">
               </figure>
 
-          
             <section id="sign-up-popup" class="signup__page">
               <h1>Sign Up Here</h1>
               <div class="signup__details">
-                  <form id="form" action="SignUp.php" method="POST" onsubmit="return validateInputs();">
+                  <form id="form" action="assets\php\SignUp.php" method="POST" onsubmit="return validateInputs();">
                       <div class="names">
                           <div class="input__fields">
                               <label for="firstname">First Name</label>
@@ -214,7 +210,7 @@
           <section id="sign-in-popup" class="signup__page">
             <h1>Sign In Here</h1>
             <div class="signup__details">
-                <form id="form" action="" method="POST" onsubmit="return validateInputs();">
+                <form id="form" action="assets\php\SignIn.php" method="POST" onsubmit="return validateInputs();">
                     <div class="password__details">              
                         <div class="input__fields">
                             <label for="email">Email</label>
@@ -238,9 +234,6 @@
                 </form>
             </div>        
           </section>
-
-        </div>
-
       </div>
   </section>
 
