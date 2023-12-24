@@ -502,7 +502,14 @@
     cursor: url("../images/close.png"), auto;
   }
   
-  
+  #order-now-btn{
+    padding-top: 10px;
+  }
+
+  #order-now-btn:hover{
+    background-color: var(--deep-saffron);
+    color: var(--white);
+  }
   
   
   
@@ -576,10 +583,35 @@
         color: var(--black);
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
-        padding: 10px;
+        padding: 6px;
         border-bottom: 1px solid var(--dark-orange);
+        font-weight: 600;
+      }
+
+      #cart-popup p #quantity{
+        margin-left: 200px;
+      } 
+
+      #cart-popup p #cart-total{
+        margin-left: 96px;
+      }
+
+      #cart-popup p .checkout-btn{
+        margin-left: 80px;
+      }
+
+      #cart-item-div p #quantity-1{
+        margin-left: 200px;
+      }
+
+      #cart-item-div p #cart-total-1{
+        margin-left: 96px;
+      }
+
+      #cart-item-div p .checkout-btn{
+        margin-left: 80px;
       }
       
       #cart-popup h2 {
@@ -637,7 +669,7 @@
       @media (max-width: 600px) {
         /* Adjust styles for smaller screens */
         #cart-icon {
-          bottom: 10px;
+          
           right: 10px;
         }
       
@@ -2122,12 +2154,45 @@
     }
 
     #logo-text{
-      font-size: 18px;
+      font-size: 25px;
       font-weight: 500;
     }
 
     #logo-img{
-      width: 30px;
-      height: 30px;
+      width: 38px;
+      height: 38px;
+    }
+    #order-now-btn{
+      width: 35%;
+      padding-top: 10px;
+    }
+
+    #cart-popup p #quantity{
+      font-size: 15px;
+      margin-left: 80px;
+    } 
+
+    #cart-popup p #cart-total{
+      font-size: 15px;
+      margin-left: 45px;
+    }
+
+    #cart-popup p .checkout-btn{
+      font-size: 15px;
+      margin-left: 40px;
+    }
+    #cart-item-div p #quantity-1{
+      font-size: 20px;
+      margin-left: 120px;
+    } 
+
+    #cart-item-div p #cart-total-1{
+      font-size: 20px;
+      margin-left: 65px;
+    }
+
+    #cart-item-div p .checkout-btn{
+      font-size: 20px;
+      margin-left: 40px;
     }
   }

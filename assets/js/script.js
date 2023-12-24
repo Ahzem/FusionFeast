@@ -124,60 +124,65 @@ function removeItem(index) {
   updateCart();
 }
 
+
+
+function generateCartTable() {
+  let cartTableHTML = '';
+
+  // Generate the table
+  cartTableHTML += '<table>';
+
+  // Generate table rows for each item
+  cartItems.forEach((item, index) => {
+    cartTableHTML += '<tr>';
+    cartTableHTML += `<td style="width: 250px;">${item.name}</td>`;
+    cartTableHTML += `<td style="width: 100px;">${item.quantity}</td>`;
+    cartTableHTML += `<td style="width: 120px;">$${(item.price * item.quantity).toFixed(2)}</td>`;
+    cartTableHTML += `<td style="width: 100px;"><button class="remove-btn" onclick="removeItem(${index})">Remove</button></td>`;
+    cartTableHTML += '</tr>';
+  });
+
+  // Generate the table footer
+  cartTableHTML += '</table>';
+
+  return cartTableHTML;
+}
+
 function updateCart() {
   const cartCount = document.getElementById('cart-count');
-  const cartList = document.getElementById('cart-items');
+  const cartList1 = document.getElementById('cart-items'); // First place to display cart
+  const cartList2 = document.getElementById('cart-items-1'); // Second place to display cart
+  const quantityTotal = document.getElementById('quantity');
+  const quantityTotal1 = document.getElementById('quantity-1');
   const totalSpan = document.getElementById('cart-total');
+  const totalSpan1 = document.getElementById('cart-total-1');
 
   // Update cart count
   cartCount.textContent = cartItems.length;
 
   // Clear previous items
-  cartList.innerHTML = '';
+  cartList1.innerHTML = '';
+  cartList2.innerHTML = '';
 
   // Populate the cart with the updated items
-  cartItems.forEach((item, index) => {
-    const tableRow = document.createElement('tr');
-  
-    // Name cell
-    const nameCell = document.createElement('td');
-    nameCell.textContent = item.name;
-    nameCell.style.width = '250px';
-    tableRow.appendChild(nameCell);
-  
-    // Quantity cell
-    const quantityCell = document.createElement('td');
-    quantityCell.textContent = item.quantity;
-    quantityCell.style.width = '100px';
-    tableRow.appendChild(quantityCell);
-  
-    // Price cell
-    const priceCell = document.createElement('td');
-    priceCell.textContent = `$${(item.price * item.quantity).toFixed(2)}`;
-    priceCell.style.width = '100px';
-    tableRow.appendChild(priceCell);
+  cartList1.innerHTML = generateCartTable();
+  cartList2.innerHTML = generateCartTable();
 
-    
-  
-    // Remove button cell
-    const removeButtonCell = document.createElement('td');
-    const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove';
-    removeButton.className = 'remove-btn';
-    removeButton.style.width = '100px';
-    removeButton.onclick = () => removeItem(index);
-    removeButtonCell.appendChild(removeButton);
-    tableRow.appendChild(removeButtonCell);
-    cartList.appendChild(tableRow);
-    
-    const braekrow = document.createElement('br');
-    cartList.appendChild(braekrow);
-  });
-  
+
+  // Update quantity total
+  quantityTotal.textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
+
+  // Update quantity total
+  quantityTotal1.textContent = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   // Update total
   totalSpan.textContent = cartTotal.toFixed(2);
+
+  // Update total
+  totalSpan1.textContent = cartTotal.toFixed(2);
 }
+
+
 
 function toggleCartPopup() {
   const cartPopup = document.getElementById('cart-popup');
@@ -186,6 +191,7 @@ function toggleCartPopup() {
 
 function hideCartPopup() {
   document.getElementById('cart-popup').style.display = 'none';
+  document.getElementById('checkout-popup').style.display = 'none';
 }
 
 function toggleSignUpPopup() {
@@ -219,6 +225,16 @@ function toggleLogoPopup() {
   document.getElementById('cencel-btn').style.display = 'none';
 }
 
+function toggleCheckoutPopup() {
+  const cartPopup = document.getElementById('checkout-popup');
+  cartPopup.style.visibility = cartPopup.style.visibility === 'visible' ? 'hidden' : 'visible';
+  document.getElementById('cart-popup').style.display = 'none';
+  document.getElementById('.checkout-popup').style.display = 'block';
+}
+
+function hideCheckoutPopup() {
+  document.getElementById('checkout-popup').style.visibility = 'hidden';
+}
 
 function filterItems(category) {
   var foodItems = document.querySelectorAll("#food-menu .food-menu-card");
@@ -233,8 +249,52 @@ function filterItems(category) {
 }
 
 
+function saveOrderToDatabase(cardDetails) {
+  const orderData = {
+    cartItems: cartItems,
+    cartTotal: cartTotal,
+    cardDetails: cardDetails,
+  };
 
+  // Make an AJAX request to the PHP endpoint
+  fetch('save_order.php', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(orderData),
+  })
+  .then(response => response.text())
+  .then(data => {
+      console.log(data); // Log the response from the server
+      // Handle any further actions based on the server response
+  })
+  .catch((error) => {
+      console.error('Error:', error);
+  });
+}
 
+function submitCardDetails() {
+  // Get card details from the form
+  const cardNumber = document.getElementById('card-number').value;
+  const cardHolder = document.getElementById('card-holder').value;
+  const cardExpiry = document.getElementById('card-expiry').value;
+  const cardCVV = document.getElementById('card-cvv').value;
 
+  // Check if any of the fields are empty
+  if (!cardNumber || !cardHolder || !cardExpiry || !cardCVV) {
+    alert("Please fill in all the card details.");
+    return;
+  }
 
+  // Assemble card details
+  const cardDetails = {
+    cardNumber: cardNumber,
+    cardHolder: cardHolder,
+    cardExpiry: cardExpiry,
+    cardCVV: cardCVV,
+  };
 
+  // Save the order to the database
+  saveOrderToDatabase(cardDetails);
+}

@@ -1,0 +1,393 @@
+.card-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.strt-line{
+    background-color: black;
+    height: 80px;
+    width: 1px;
+}
+
+.payment{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -40px;
+}
+
+.card-type-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#master-card, #jcb-card, #amex-card{
+    display: none;
+}
+
+.card-type-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+  #visa {
+    content: url('https://img.icons8.com/color/48/visa.png');
+    height: 50px;
+    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #visa:checked, #master:checked, #jcb:checked, #amex:checked {
+      width: 65px;
+      height: 65px;
+  }
+
+  #master {
+    content: url('https://img.icons8.com/color/48/mastercard-logo.png');
+    height: 50px;
+    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #jcb {
+    content: url('https://img.icons8.com/color/48/jcb.png');
+    height: 50px;
+    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  #amex {
+    content: url('https://img.icons8.com/color/48/amex.png');
+    height: 50px;
+    width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+
+  .card-details-input-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: auto;
+  }
+  
+  .card-details-input-div input{
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 30px;
+    border-bottom: 1px solid var(--deep-saffron);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  #card-cvv, #card-expiry{
+    width: 50%;
+  }
+
+  .cvv-and-expiry{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .card-details-input-div label{
+    font-size: 12px;
+    font-weight: 520;
+    color: var(--black);
+    margin-top: 8px;
+    margin-bottom: -8px;
+  }
+
+  label{
+    font-size: 12px;
+    font-weight: 520;
+    color: var(--black);
+    margin-top: 8px;
+    margin-bottom: -8px;
+  }
+  
+  .card-details-input-div input:focus{
+    outline: none;
+    border-bottom: 2px solid var(--dark-orange);
+  }
+  
+  .card-details-input-div input::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--gray-x-11-gray);
+  }
+
+  .card-details-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cart-item-div p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 55px;
+  }
+
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+  form h1{
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-orange);
+    margin-bottom: 20px;
+  }
+
+  .card-details-container{
+    justify-content: center;
+    align-items: center;
+    background-color: #ffaf014f;
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .product-details-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 50px;
+    width: 500px;
+  }
+  
+  
+  .card-details-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: var(--dark-orange);
+    color: var(--isabelline);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .card-details-btn-div:hover{
+    background-color: var(--black);
+    color: var(--white);
+
+  }
+
+    .card-details-btn-div:active{
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .cencel-btn{
+        background-color: none;
+        color: var(--black);
+        border: 2px solid var(--dark-orange);
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        width: 100px;
+        font-weight: 500;
+    }
+
+    .cencel-btn:hover{
+        border: none;
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    #checkout-popup {
+        z-index: 999;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #ffffffa6;
+        border: 1px var(--dark-orange);
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        max-height: 600px;
+        overflow-y: scroll;
+        box-shadow: var(--shadow-1);
+        z-index: 1; /* Place the cart popup behind the cart icon */
+        backdrop-filter: blur(5px); /* Apply the blur effect to the background */
+        -webkit-backdrop-filter: blur(5px); /* Add support for Safari 9+ and Safari on iOS 9+ */
+        gap: 50px;
+    }
+
+    #checkout-popup{
+      visibility: hidden;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+    }
+
+
+      #checout-popup p {
+        font-size: 20px;
+        color: var(--black);
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid var(--dark-orange);
+      }
+      
+      #checout-popup h2 {
+        font-size: 25px;
+        color: var(--black);
+        margin: 0;
+      }
+      
+      .checkout-btn{
+        background-color: var(--dark-orange);
+        color: var(--white);
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        cursor: pointer;
+        align-items: center;
+      }
+      
+      .checkout-btn:hover{
+        background-color: var(--black);
+      }
+  
+  
+
+  
+  
+  @media(max-width: 768px){
+    .payment{
+        display: flex;
+        flex-direction: column;
+    }
+    .strt-line{
+        display: none;
+    }
+    .card-details-input-div{
+        align-items: center;
+    }
+    .card-img-div{
+        margin-bottom: -20px;
+    }
+    .card-details-div{
+        align-items: center;
+    }
+    .card-details-input-div input{
+        width: 220px;
+        height: 25px;
+    }
+    .card-details-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: auto;
+    }
+
+    .card-img img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+    }
+    #amex, #jcb, #master, #visa{
+        width: 40px;
+        height: 40px;
+    }
+    .card-details-input-div label{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 12px;
+        font-weight: 520;
+        color: var(--dark-orange);
+        margin-top: 8px;
+        margin-bottom: -8px;
+      }
+    #checkout-popup{
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffffa6;
+        border: 1px var(--dark-orange);
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        max-height: 550px;
+        overflow-y: scroll;
+        box-shadow: var(--shadow-1);
+        z-index: 1; /* Place the cart popup behind the cart icon */
+        backdrop-filter: blur(5px); /* Apply the blur effect to the background */
+        -webkit-backdrop-filter: blur(5px); /* Add support for Safari 9+ and Safari on iOS 9+ */
+        
+        gap: 20px;
+    }
+    .card-details-container{
+        justify-content: center;
+        align-items: center;
+        background-color: #ffaf014f;
+        border-radius: 20px;
+        width: 300px;
+        padding: 20px;
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+    
+    .product-details-container{
+        width: 300px;
+        margin: 10px;
+    }
+}

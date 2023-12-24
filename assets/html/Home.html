@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/checkout.css">
 
   <!-- 
     - google font link
@@ -41,7 +42,7 @@
 
 </head>
 
-<body id="top" >
+<body id="top">
 
   <!-- 
     - #HEADER
@@ -93,10 +94,10 @@
           <span id="cart-count">0</span>
         </div>
 
-        <div id="cart-popup" onclick="hideCartPopup()">
+        <div id="cart-popup">
           <h2>Shopping Cart</h2>
           <ul id="cart-items"></ul>
-          <p>Total: $<span id="cart-total">0.00</span><span onmouseover="toggleSignUpPopup()" class="checkout-btn">Checkout</span></p>
+          <p>Total<span id="quantity">0</span><span id="cart-total">0.00</span><span onclick="toggleCheckoutPopup()" class="checkout-btn">Checkout</span></p>
         </div>
 
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
@@ -107,6 +108,96 @@
       </div>
 
     </div>
+
+
+
+
+
+<!--
+  #CHECKOUT POPUP
+-->
+
+
+
+
+
+      <section id="checkout-popup" class="checkout-section">
+        <div>
+              <div>
+                    <div class="cart-item-div">
+                        <h2>Shopping Cart</h2>
+                        <ul id="cart-items-1"></ul>
+                        <p>Total<span id="quantity-1">0</span><span id="cart-total-1">0.00</span><span onclick="hideCheckoutPopup()" class="cencel-btn">Cencel</span></p>
+                    </div>
+              </div>          
+        </div>
+        <div>
+              <div class="card-details-container">
+                  <form id="cardDetailsForm" onsubmit="submitCardDetails(); return false;">
+                    <div class="payment">
+                        <div class="card-img-div">
+                            <div class="card-img"><img id="visa-card" src="../images/Picsart_23-12-23_17-09-40-793.png" alt="Visa Card"></div>
+                            <div class="card-img"><img id="master-card" src="../images/Picsart_23-12-23_17-09-51-016.png" alt="Master Card"></div>
+                            <div class="card-img"><img id="jcb-card" src="../images/Picsart_23-12-23_17-10-01-593.png" alt="JCB Card"></div>
+                            <div class="card-img"><img id="amex-card" src="../images/Picsart_23-12-23_17-10-10-301.png" alt="Amex Card"></div>
+                        </div>
+                        <div class="strt-line"></div>
+                        <div class="card-type-div">
+                            <div>
+                                <div><label>Select Your Card Type</label></div>
+                                <div class="card-type-logos">
+                                    <input type="radio" name="card" class="card-type" id="visa" onchange="showCard('visa-card')" checked>
+                                    <input type="radio" name="card" class="card-type" id="master" onchange="showCard('master-card')">
+                                    <input type="radio" name="card" class="card-type" id="jcb" onchange="showCard('jcb-card')">
+                                    <input type="radio" name="card" class="card-type" id="amex" onchange="showCard('amex-card')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-details">
+                        <div class="card-details-div">
+                                <div class="card-details-input">
+                                    <div class="card-details-input-div">
+                                        <label for="card-number">Card Number</label>
+                                        <input type="text" name="card-number" id="card-number" placeholder="XXXX XXXX XXXX XXXX">
+                                    </div>
+                                    <div class="card-details-input-div">
+                                        <label for="card-holder">Card Holder</label>
+                                        <input type="text" name="card-holder" id="card-holder" placeholder="Card Holder Name">
+                                    </div>
+                                    <div class="cvv-and-expiry">
+                                        <div class="card-details-input-div">
+                                            <label for="card-expiry">Card Expiry</label>
+                                            <input type="text" name="card-expiry" id="card-expiry" placeholder="MM/YY">
+                                        </div>
+                                        <div class="card-details-input-div">
+                                            <label for="card-cvv">Card CVV</label>
+                                            <input type="text" name="card-cvv" id="card-cvv" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="card-details-btn">
+                                    <button type="submit" class="card-details-btn-div">Pay Now</button>
+                                </div>
+                        </div>
+                    </div>
+                  </form>
+              </div>          
+        </div>
+
+
+      </section>
+
+      
+
+
+
+
+     
+
+
+
   </header>
 
 
@@ -155,7 +246,7 @@
             <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
             
             <div class="hero-btn-group">
-              <a href="#food-menu" class="btn btn-hover">Order Now</a>
+              <a id="order-now-btn" href="#food-menu" class="btn btn-hover">Order Now</a>
             </div>
 
           </div>
@@ -171,8 +262,7 @@
         </div>
       </section>
 
-
-      <!-- 
+   <!-- 
         - #ABOUT
       -->
 
@@ -1959,6 +2049,8 @@ iv>
     - custom js link
   -->
   <script src="../js/script.js" defer></script>
+  <script src="../js/checkout.js"></script>
+  <script src="assets/js/sweetalert2.min.js"></script>
 
   <!-- 
     - ionicon link
