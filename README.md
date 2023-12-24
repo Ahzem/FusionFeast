@@ -4,7 +4,7 @@ Welcome to FusionFeast, a trendy and modern e-commerce platform for a variety of
 
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/Ahzem/FusionFeast.git)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/Ahzem/FusionFeast)
   ![GitHub stars](https://img.shields.io/github/stars/Ahzem/FusionFeast?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/Ahzem/FusionFeast?style=social)
 
