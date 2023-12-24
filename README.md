@@ -4,13 +4,15 @@ Welcome to FusionFeast, a trendy and modern e-commerce platform for a variety of
 
 <div align="center">
   
-  ![GitHub repo size](https://img.shields.io/github/repo-size/Ahzem/FusionFeast)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/Ahzem/FusionFeast.git)
   ![GitHub stars](https://img.shields.io/github/stars/Ahzem/FusionFeast?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/Ahzem/FusionFeast?style=social)
 
 </div>
 
 ## Project Overview
+
+![Screenshot 2023-12-24 181132](https://github.com/Ahzem/FusionFeast/assets/123859613/49663d5f-83fd-4b9e-a2e9-28706965b690)
 
 FusionFeast is developed as part of the Continuous Assessment 02 for the Web Technologies course at the Institute of Technology, University of Moratuwa. The project combines a visually appealing frontend using a customized template with enhanced features implemented in JavaScript and PHP for a seamless user experience.
 
