@@ -1,5 +1,8 @@
 <h1 align="center">FusionFeast E-Commerce Platform 🍕🍔🍹</h1> 
 
+<div align="center"><img src="https://github.com/Ahzem/FusionFeast/assets/123859613/c9dbc85c-5e68-4c49-ace6-2ee4229bfc8b" width="300px" height="300px">
+</div>
+
 Welcome to FusionFeast, a trendy and modern e-commerce platform for a variety of delicious dishes and drinks! This platform allows users to explore a fusion of flavors and conveniently order their favorite items online.
 
 <div align="center">
@@ -73,4 +76,29 @@ If you have ideas for improvements or new features, feel free to contribute! For
 - Developer: [Ahzem](https://linkedin.com/in/ahzem)
 - University: [Institute of Technology, University of Moratuwa](https://itum.mrt.ac.lk)
 
-Thank you for checking out FusionFeast! Enjoy your virtual culinary journey! 🎉🍽️
+<br>
+
+<div align="center">
+    <a href="https://www.linkedin.com/in/Ahzem/" target="_blank" class="follow-button"><img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"></a>
+    <a href="https://www.facebook.com/mfm.ahzem"><img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
+    <a href="https://www.instagram.com/_ahzem_" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+    <a href="https://twitter.com/intent/follow?screen_name=_ahzem_" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter"/></a>
+    <a href="https://www.pinterest.com/ahzem1422/" target="_blank"><img width="48" height="48" src="https://img.icons8.com/fluency/48/pinterest.png" alt="pinterest"/></a>
+    <a href="https://medium.com/@ahzem" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/medium-logo.png" alt="medium-logo"/></a>
+    <a href="https://www.youtube.com/@ahzemkingster" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/youtube-play.png" alt="youtube-play"/></a>
+    <a href="https://www.behance.net/ahzem" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/behance.png" alt="behance"/></a>
+    <a href="https://dev.to/ahzem" target="_blank"><img width="48" height="48" src="https://img.icons8.com/windows/32/000000/dev.png" alt="dev"/></a>
+    <a href="https://tree-nation.com/trees/view/5253803" target="_blank"><img width="48" height="48" src="https://growtrees.b-cdn.net/images/treenation3.png" alt="tree"/></a>
+</div>
+
+
+    
+<p align="center"> or connect with </p>
+
+<div align="center">
+    <a href="mailto:ahzemkingster1422@gmail.com" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/gmail.png" alt="gmail"/></a>
+    <a href="https://t.me/mfm_ahzem" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="telegram-app--v1"/></a>
+    <a href="https://stackoverflow.com/users/21335921/ahzem?tab=profile" target="_blank"><img width="48" height="48" src="https://img.icons8.com/color/48/000000/stackoverflow.png" alt="stackoverflow"/></a>
+</div>
+<br>
+<p align="center">Thank you for checking out FusionFeast! Enjoy your virtual culinary journey! 🎉🍽️<p>
