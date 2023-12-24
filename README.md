@@ -32,16 +32,31 @@ FusionFeast is developed as part of the Continuous Assessment 02 for the Web Tec
 
 ## How to Run the Project
 
+0. **Prerequisites:**
+   - Install a web server environment like [XAMPP](https://www.apachefriends.org/index.html) or [WAMP](https://www.wampserver.com/en/).
+   - Install [Git](https://git-scm.com/downloads) to clone the repository.
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/Ahzem/FusionFeast.git
    ```
 
 2. **Setup Database:**
-   - Follow the instructions in the README of the template repository for database setup.
+   - Follow the instructions
+      - Go to phpMyAdmin
+      - Create a database named `fusion_db`
+      - Import the `fusion_db.sql` file in the `assetes/DataBase` folder
+      - Create a user named `fusion_user` with password `fusion_pass`
+      - Grant all privileges to the user `fusion_user` for the database `fusion_db`
+      - If you want to use a different database name, user name, or password, you can change them in the `config.php` file in the `assetes/PHP` folder
+
 
 3. **Run the Project:**
    - Open the project in your preferred web server environment.
+   - For XAMPP, copy the project folder to the `htdocs` folder in the XAMPP installation directory.
+   - For WAMP, copy the project folder to the `www` folder in the WAMP installation directory.
+   - Start the Apache and MySQL services.
+   - Open a web browser and go to `localhost/FusionFeast` to view the homepage.
 
 4. **Explore and Enjoy!:**
    - Visit the homepage and start exploring the FusionFeast of flavors.
@@ -52,7 +67,7 @@ If you have ideas for improvements or new features, feel free to contribute! For
 
 ## Credits
 
-- Template: [codewithsadee/foodie](https://github.com/codewithsadee/foodie.git)
+- Template: [codewithsadee/foodie](https://github.com/codewithsadee/foodie.git)(Uaed For Just Learning Purpose)
 - Developer: [Ahzem](https://linkedin.com/in/ahzem)
 - University: [Institute of Technology, University of Moratuwa](https://itum.mrt.ac.lk)
 

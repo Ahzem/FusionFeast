@@ -298,3 +298,5 @@ function submitCardDetails() {
   // Save the order to the database
   saveOrderToDatabase(cardDetails);
 }
+
+
