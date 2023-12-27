@@ -51,9 +51,9 @@ FusionFeast is developed as part of the Continuous Assessment 02 for the Web Tec
       - Go to phpMyAdmin
       - Create a database named `fusion_db`
       - Import the `fusion_db.sql` file in the `assetes/DataBase` folder
-      - Create a user named `fusion_user` with password `fusion_pass`
-      - Grant all privileges to the user `fusion_user` for the database `fusion_db`
-      - If you want to use a different database name, user name, or password, you can change them in the `config.php` file in the `assetes/PHP` folder
+      - Create a user name and password for the database
+      - Grant all privileges to the user
+      - If you want to use a different database name, user name, or password, you can change them in each PHP file in the `assets/php` folder
 
 
 3. **Run the Project:**
@@ -72,7 +72,11 @@ If you have ideas for improvements or new features, feel free to contribute! For
 
 ## Credits
 
-- Template: [codewithsadee/foodie](https://github.com/codewithsadee/foodie.git)(Uaed For Just Learning Purpose)
+- Template: [codewithsadee/foodie](https://github.com/codewithsadee/foodie.git)([Live Demo](https://codewithsadee.github.io/foodie/))
+   - the template have only frontend part of home page and menu page
+- Fonts: [Google Fonts](https://fonts.google.com/)
+- Images: [Unsplash](https://unsplash.com/)
+- Icons: [icons8](https://icons8.com/)
 - Developer: [Ahzem](https://linkedin.com/in/ahzem)
 - University: [Institute of Technology, University of Moratuwa](https://itum.mrt.ac.lk)
 
